@@ -23,10 +23,10 @@ function App(): JSX.Element {
   }, [data]);
 
   const handlePreviousClick = (): void => {
-    dispatch(setPreviousPage);
+    dispatch(setPreviousPage());
   };
   const handleNextClick = (): void => {
-    dispatch(setNextPage);
+    dispatch(setNextPage());
   };
 
   return (
