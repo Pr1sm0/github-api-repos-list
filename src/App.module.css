@@ -1,0 +1,69 @@
+.root {
+  flex: 1 1 auto;
+  overflow: auto;
+  background-color: #E5E5E5;
+  height: 100vh;
+}
+
+.wrapper {
+  padding: 32px 54px;
+}
+
+.search {
+  width: 100%;
+  height: 56px;
+  border: none;
+  box-shadow: 0 4px 4px rgba(51, 51, 51, 0.04), 0 4px 24px rgba(51, 51, 51, 0.24);
+  border-radius: 4px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 16px;
+}
+
+.repoContainer {
+  display: flex;
+  gap: 36px;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.repoItem {
+  background-color: #FFFFFF;
+  height: 144px;
+  display: flex;
+  border-radius: 16px;
+  padding: 40px;
+  align-items: center;
+}
+
+.repoContent {
+  margin-left: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 44px;
+}
+
+.paginationButton {
+  all: unset;
+  cursor: pointer;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.paginationButton:disabled {
+  cursor: default;
+  color: grey;
+}
+
+.paginationButtonActive {
+  margin-bottom: -4px;
+  border-bottom: 4px solid #65B79A;
+}
