@@ -1,9 +1,12 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import styles from './App.module.css';
-import { useGetReposQuery } from './store/slices/api.slice';
 import { useDispatch, useSelector } from 'react-redux';
+
+import starIcon from './assets/StarIcon.svg';
+import styles from './App.module.css';
+import userIcon from './assets/UserIcon.svg';
 import { getPageSelector } from './store/selectors/page.selector';
 import { setNextPage, setPage, setPreviousPage } from './store/slices/page.slice';
+import { useGetReposQuery } from './store/slices/api.slice';
 
 const ITEMS_PER_PAGE = 3;
 
@@ -61,14 +64,14 @@ function App(): JSX.Element {
                 </div>
                 <div style={{ marginTop: 'auto' }}>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
-                    <img src="/Vector.png" alt="icon" />
+                    <img src={starIcon} alt="icon" />
                     <p style={{ marginLeft: '10px' }}>
                       <b>{repo.stargazers_count}</b>
                       <span style={{ color: '#6E798C' }}> stars</span>
                     </p>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
-                    <img src="/Level%20Icon.png" alt="icon" />
+                    <img src={userIcon} alt="icon" />
                     <p style={{ marginLeft: '10px' }}>
                       <b>{repo.watchers} watchers</b>
                     </p>
