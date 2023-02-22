@@ -32,7 +32,14 @@ function App(): JSX.Element {
   return (
     <div className={styles.root}>
       <div className={styles.wrapper}>
-        <input placeholder="Search" className={styles.search} onChange={(e): void => setSearch(e.target.value)} />
+        <input
+          placeholder="Search"
+          className={styles.search}
+          onChange={(e): void => {
+            dispatch(setPage(1));
+            setSearch(e.target.value);
+          }}
+        />
         <div className={styles.repoContainer}>
           {search && totalCount < 1 && 'No repository was found for your request'}
           {data?.items.map((repo: any) => (
