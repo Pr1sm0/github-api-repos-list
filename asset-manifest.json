@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/github-api-repos-list/static/css/main.d2e374a7.css",
+    "main.js": "/github-api-repos-list/static/js/main.6fea2322.js",
+    "index.html": "/github-api-repos-list/index.html",
+    "main.d2e374a7.css.map": "/github-api-repos-list/static/css/main.d2e374a7.css.map",
+    "main.6fea2322.js.map": "/github-api-repos-list/static/js/main.6fea2322.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2e374a7.css",
+    "static/js/main.6fea2322.js"
+  ]
+}
