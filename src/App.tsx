@@ -64,14 +64,14 @@ function App(): JSX.Element {
                 </div>
                 <div style={{ marginTop: 'auto' }}>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
-                    <img src={starIcon} alt="icon" />
+                    <img src={starIcon} alt="icon" width="24px" />
                     <p style={{ marginLeft: '10px' }}>
                       <b>{repo.stargazers_count}</b>
                       <span style={{ color: '#6E798C' }}> stars</span>
                     </p>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
-                    <img src={userIcon} alt="icon" />
+                    <img src={userIcon} alt="icon" width="24px" />
                     <p style={{ marginLeft: '10px' }}>
                       <b>{repo.watchers} watchers</b>
                     </p>
